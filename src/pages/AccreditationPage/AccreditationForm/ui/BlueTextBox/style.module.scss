@@ -1,0 +1,8 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.box {
+    @include blue-field-container($paddingVertical: 24px);
+    @include blue-field-background;
+    font-size: 20px;
+    line-height: 24px;
+}

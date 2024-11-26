@@ -1,0 +1,97 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.pageLayout {
+    width: fit-content;
+    min-width: 100%;
+    overflow-y: hidden;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: 515px 1fr;
+    height: 100%;
+}
+
+.menu {
+    background-image: url('../../shared/assets/images/background-gradiend.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 49px;
+    padding-right: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.menuHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerTitle {
+    font-weight: 500;
+    color: $white;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.headerSubtitle {
+    font-weight: 400;
+    color: $white-056;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.univercityLink {
+    margin-bottom: 45px;
+}
+
+.menuFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gigachatLink {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white-056;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 28px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.gigachatLogo {
+    margin-bottom: 17px;
+    width: 140px;
+    height: 45px;
+}
+
+.contentLayout {
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 70px;
+    padding-right: 30px;
+}

@@ -1,0 +1,28 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.inputBox {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}
+
+.content {
+    display: grid;
+    gap: 8px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    color: $black-056;
+}
+
+.inputBox.invalid .subtitle{
+    color: $warning;
+}
+
+.actions {
+    margin-left: 12px;
+}

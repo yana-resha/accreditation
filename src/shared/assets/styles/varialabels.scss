@@ -1,0 +1,142 @@
+// colors
+$white: rgba(255, 255, 255);
+$white-056: rgba($white, 0.56);
+$white-096: rgba($white, 0.96);
+$white-010: rgba($white, 0.1);
+
+$black: rgba(0, 0, 0);
+$black-056: rgba($black, 0.56);
+
+$primary-text: rgba(38, 38, 38);
+$primary-text-055: rgba($primary-text, 0.55);
+$primary-text-024: rgba($primary-text, 0.24);
+
+$blue: rgba(8, 45, 150);
+$light-blue: rgba(232, 237, 250);
+
+$warning: rgba(209, 77, 0);
+$warning-024: rgba($warning, 0.24);
+
+
+// mixins
+
+// inputs
+@mixin blue-field-background {
+    background-color: $light-blue;
+    border-left: 5px solid $blue;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+@mixin blue-field-background-error {
+    background-color: $warning-024;
+    border-color: $warning;
+}
+
+@mixin blue-field-container ($paddingVertical: 10px, $paddingHorizontal: 42px) {
+    width: 100%;
+    border-radius: 0px;
+    padding: $paddingVertical $paddingHorizontal;
+    position: relative;
+    z-index: 0;
+}
+
+@mixin blue-field-background-hover {
+    background-color: rgba($color: $light-blue, $alpha: 0.8);
+    border-color: rgba($color: $blue, $alpha: 0.8);
+}
+
+@mixin blue-field-background-focus {
+    background-color: $light-blue;
+    border-color: $blue;
+}
+
+@mixin regular-field-background {
+    background-color: $white;
+    border: 1px solid $primary-text-024;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+@mixin regular-field-background-error {
+    border-color: $warning;
+}
+
+@mixin regular-field-background-hover {
+    border-color: $primary-text-055;
+}
+
+@mixin regular-field-background-focus {
+    border-color: $blue;
+    border-width: 1.5px;
+}
+
+@mixin regular-field-container ($paddingVertical: 16px, $paddingHorizontal: 16px) {
+    width: 100%;
+    border-radius: 4px;
+    padding: $paddingVertical $paddingHorizontal;
+    position: relative;
+    z-index: 0;
+}
+
+
+@mixin input-styles ($fontWeight: 400, $color: $primary-text, $font-size: 20px, $placeholder-color: $primary-text-055) {
+    padding: 0;
+    width: 100%;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    color: $color;
+    font-weight: $fontWeight;
+    line-height: 24px;
+    font-size: $font-size;
+    resize: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    scrollbar-width: 0;
+    transition: caret-color 0.3s;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+
+    }
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    &::placeholder {
+        color: $placeholder-color;
+        font-weight: $fontWeight;
+        line-height: 20px;
+        font-size: $font-size;
+    }
+
+    &:focus {
+        caret-color: $blue;
+    }
+
+    &:read-only {
+        pointer-events: none;
+    }
+
+}
+
+//btn
+
+@mixin blue-btn ($paddingVertical: 16px, $paddingHorizontal: 16px, $fontSize: 19px, $lineHeight: 24px, $fontWeight: 500, $corner: 12px) {
+    color: $white;
+    padding: $paddingVertical $paddingHorizontal;
+    background-color: $blue;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    border-radius: $corner;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

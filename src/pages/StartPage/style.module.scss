@@ -1,0 +1,97 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.pageLayout {
+    width: fit-content;
+    min-width: 100%;
+    overflow-x: auto;
+    min-height: 100%;
+    height: fit-content;
+    background-image: url('../../shared/assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    min-height: 100%;
+    margin: 148px 50px;
+    
+}
+
+.startContainer {
+    width: 100%;
+    background: linear-gradient(180.00deg, rgb(0, 56, 135) 0%,rgb(55, 106, 255) 100%);
+    padding: 30px;
+    border-radius: 84px;
+    height: fit-content;
+    padding-top: 150px;
+    padding-bottom: 88px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startHeader {
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 95px;
+}
+
+
+.startContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerTitle {
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+}
+
+.headerSubtitle {
+    line-height: 100%;
+    font-size: 42px;
+    white-space: nowrap;
+}
+
+.contentTitle {
+    color: $white;
+    font-size: 58px;
+    line-height: 110%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contentSubtitle {
+    font-size: 42px;
+    line-height: 110%;
+    font-weight: 400;
+    color: $white-056;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+.navigateLink {
+    @include blue-btn($fontSize: 42px, $lineHeight: 100%, $fontWeight: 400,$corner: 84px, $paddingVertical: 29px, $paddingHorizontal: 64px);
+    text-decoration: none;
+    min-width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

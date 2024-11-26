@@ -1,0 +1,66 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.pageLayout {
+    min-width: 100%;
+    min-height: 100%;
+    width: fit-content;
+    height: fit-content;
+    background-image: url('../../shared/assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+.pageLink {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 85px;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.gigachatLogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 205px;
+    height: 72px;
+}
+
+.contentLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.univercityLogo {
+    margin-bottom: 95px;
+    width: fit-content;
+}
+
+.title {
+    color: $white;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 500;
+    color: $white-056;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}

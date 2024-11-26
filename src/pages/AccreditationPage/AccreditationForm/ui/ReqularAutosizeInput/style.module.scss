@@ -1,0 +1,36 @@
+@use '@/shared/assets/styles/varialabels' as *;
+
+.inputContainer {
+    @include regular-field-container;
+}
+
+.actionStyles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    @include regular-field-background;
+}
+
+.input:hover ~ .actionStyles {
+    @include regular-field-background-hover
+}
+
+.input:focus ~ .actionStyles {
+    @include regular-field-background-focus 
+}
+
+.input.invalid ~ .actionStyles {
+    @include regular-field-background-error; 
+}
+
+.inputContainer.disabled {
+    opacity: 0.4;
+    cursor: none;
+}
+
+.input {
+    @include input-styles;
+}

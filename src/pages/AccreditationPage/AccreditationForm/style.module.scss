@@ -1,0 +1,48 @@
+.layout {
+    display: grid;
+    gap: 57px;
+    max-width: 1100px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    gap: 32px;
+}
+
+.formResult {
+    display: grid;
+    gap: 50px;
+}
+
+.settingsBox {
+    margin-bottom: 28px;
+    display: grid;
+    gap: 26px;
+}
+
+.settingsGridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 35px;
+    align-items: start;
+}
+
+.numberBox {
+    display: grid;
+    gap: 8px;
+}
+
+.smallLabel {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+}
+
+.formBtn {
+    min-width: 288px;
+}
+
