@@ -22,7 +22,7 @@ export const StartPage = () => (
           <div className={style.contentTitle}>Первичная аккредитация</div>
           <div className={style.actionContainer}>
             <div className={style.contentSubtitle}>
-              По специальности <br /> «Лечебное дело»
+              По специальности <br /> «Кардиология»
             </div>
             <Link
               className={style.navigateLink}

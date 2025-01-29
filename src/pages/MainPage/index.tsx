@@ -24,7 +24,7 @@ export const MainPage = () => (
 
           <div className={style.content}>
             <div className={style.title}>Первичная аккредитация</div>
-            <div className={style.subtitle}>по специальности «Лечебное дело»</div>
+            <div className={style.subtitle}>по специальности «Кардиология»</div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { AccreditationForm } from './AccreditationForm'
 import style from './style.module.scss'
 import gigachatImg from '@/shared/assets/images/gigachat-regular.png'
-import univercityLogo from '@/shared/assets/images/univercity-regular.png'
+import univercityLogo from '@/shared/assets/images/univercity-reqular.png'
 
 export const AccreditationPage = () => (
   <section className={style.pageLayout}>
@@ -10,14 +10,14 @@ export const AccreditationPage = () => (
         <div className={style.menuHeader}>
           <a
             className={style.univercityLink}
-            href="https://www.sechenov.ru/"
+            href="https://www.volgmed.ru/"
             target="_blank"
             rel="noreferrer"
           >
             <img src={univercityLogo} />
           </a>
           <div className={style.headerTitle}>Первичная аккредитация</div>
-          <div className={style.headerSubtitle}>по специальности «Лечебное дело»</div>
+          <div className={style.headerSubtitle}>по специальности «Кардиология»</div>
         </div>
         <div className={style.menuFooter}>
           <a
